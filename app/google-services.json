@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "707087487480",
+    "project_id": "bosmofficialapp-1495264283528"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:707087487480:android:53f7903408235c85",
+        "android_client_info": {
+          "package_name": "pilani.bosm_official_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "707087487480-qcb4eieuf33t53huke3c3aigrn575222.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pilani.bosm_official_app",
+            "certificate_hash": "076cf8b5ef56c7b95636ddf2541d4f2f0b553f43"
+          }
+        },
+        {
+          "client_id": "707087487480-bvj4qhp66dpc1skene3m4q287o38ft4k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0g4cdAiMC29ZuB7R3dkqTML8s64WWKRc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">#212121</color>
+    <color name="colorAccent">#FFFFFF</color>
+
+
+
+    <color name="Green">#228B22</color>
+    <color name="Red">#ff0000</color>
+    <color name="Blue">#00FFFF</color>
+    <color name="white">#FFFFFF</color>
+
+
+    <color name="bid">#C89228</color>
+    <color name="bid_dark">#99701E</color>
+    <color name="power_bid_active">#FF8100</color>
+    <color name="power_bid_active_dark">#CC6600</color>
+    <color name="slot">#82BA73</color>
+
+    <color name="color_red">#EF5350</color>
+
+    <color name="bosm_roulette">#80BC40</color>
+
+
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="authStatusBar">#BDBDBD</color>
+
+    <color name="nav_text">@color/white</color>
+    <color name="nav_text_selected">#D4dF73</color>
+
+
+    <color name="bosm_blue">#238BC8</color>
+    <color name="bosm_red">#DE242F</color>
+    <color name="bosm_green">#159D49</color>
+
+    <color name="fav_green">#5FBB46</color>
+
+    <color name="grey">#CCC</color>
+    <color name="blue">#00B0FF</color>
+
+    <color name="heading_background">#F2FBFB</color>
+
+
+    <color name="errorColor">#DD2C00</color>
+    <color name="custom_dark_grey">#202020</color>
+    <color name="custom_white_grey">#A0A0A0</color>
+    <color name="custom_middle_grey">#606060</color>
+    <color name="custom_teal">#f0f0f0</color>
+    <color name="custom_red">#F44336</color>
+    <color name="defaultColor">#330000</color>
+    <color name="custom_yellow"> #FFEB3B</color>
+    <color name="buttonTextColor">@color/white</color>
+
+
+    <color name="userBack">#FFCA28</color>
+
+</resources>

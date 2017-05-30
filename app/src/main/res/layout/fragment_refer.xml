@@ -1,0 +1,74 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#424242"
+    tools:context="pilani.bosm_official_app.Fragments.Refer">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="30dp"
+            android:tint="#BF360C"
+            android:src="@drawable/bosm_roulette_large"/>
+
+        <TextView
+            android:id="@+id/tvLab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivLogo"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textSize="11sp"
+            android:textColor="@color/colorAccent"
+            android:text="SHARE YOUR INVITE CODE" />
+
+        <TextView
+            android:id="@+id/tvRefCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tvLab1"
+            android:padding="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textSize="27sp"
+            android:textColor="#F9A825"
+            android:text="22244W5"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvRefCode"
+            android:layout_above="@+id/bShare"
+            android:padding="40dp"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18sp"
+            android:text="Share your promo code with your friends to get free $20 for every new registeration."/>
+
+        <Button
+            android:id="@+id/bShare"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/colorPrimary"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:text="Share" />
+    </RelativeLayout>
+
+</FrameLayout>

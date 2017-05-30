@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wrapper"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:tint="#BF360C"
+        android:src="@drawable/athletics"/>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/ivLogo"
+        android:layout_alignBottom="@id/ivLogo"
+        android:text="Athletics"
+        android:textColor="@color/colorAccent"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@id/ivLogo"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"/>
+
+</RelativeLayout>

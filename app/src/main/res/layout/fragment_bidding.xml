@@ -1,0 +1,683 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="pilani.bosm_official_app.Fragments.Bidding">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/card_padding">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <FrameLayout
+                        android:id="@+id/center"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_centerHorizontal="true" />
+
+                    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/cvTeamA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/card_padding"
+                        android:layout_toLeftOf="@+id/center"
+                        android:layout_toStartOf="@+id/center"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        card_view:cardBackgroundColor="#ffffff"
+                        card_view:cardCornerRadius="@dimen/cardview_default_radius"
+                        card_view:cardElevation="@dimen/cardview_default_elevation">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Team A"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/tvTeamA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="2dp"
+                                android:text="college 1"
+                                android:lines="1"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/cvTeamB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/card_padding"
+                        android:layout_toEndOf="@+id/center"
+                        android:layout_toRightOf="@+id/center"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        card_view:cardBackgroundColor="#ffffff"
+                        card_view:cardCornerRadius="@dimen/cardview_default_radius"
+                        card_view:cardElevation="@dimen/cardview_default_elevation">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Team B:"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/tvTeamB"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="2dp"
+                                android:lines="1"
+                                android:text="college 2"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/cvVenue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cvTeamA"
+                    android:layout_margin="@dimen/card_padding"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    card_view:cardBackgroundColor="#ffffff"
+                    card_view:cardCornerRadius="@dimen/cardview_default_radius"
+                    card_view:cardElevation="@dimen/cardview_default_elevation">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Venue:"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tvVenue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="2dp"
+                            android:text="SAC"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <FrameLayout
+                        android:id="@+id/center2"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_centerHorizontal="true" />
+
+                    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/cvDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/card_padding"
+                        android:layout_toLeftOf="@+id/center2"
+                        android:layout_toStartOf="@+id/center2"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        card_view:cardBackgroundColor="#ffffff"
+                        card_view:cardCornerRadius="@dimen/cardview_default_radius"
+                        card_view:cardElevation="@dimen/cardview_default_elevation">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Date:"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/tvDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="2dp"
+                                android:text="19 September 2016"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+
+                    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/cvTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/card_padding"
+                        android:layout_toEndOf="@+id/center2"
+                        android:layout_toRightOf="@+id/center2"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        card_view:cardBackgroundColor="#ffffff"
+                        card_view:cardCornerRadius="@dimen/cardview_default_radius"
+                        card_view:cardElevation="@dimen/cardview_default_elevation">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Time:"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                                android:textSize="16sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/tvTime"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="2dp"
+                                    android:text="19:45"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="2dp"
+                                    android:text=", "
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                                <TextView
+                                    android:id="@+id/tvDay"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="2dp"
+                                    android:text="Friday"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/cvStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cvDate"
+                    android:layout_margin="@dimen/card_padding"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    card_view:cardBackgroundColor="#ffffff"
+                    card_view:cardCornerRadius="@dimen/cardview_default_radius"
+                    card_view:cardElevation="@dimen/cardview_default_elevation">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Status:"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tvStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="2dp"
+                            android:text="Pending"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/cvWon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cvDate"
+                    android:layout_margin="@dimen/card_padding"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:visibility="gone"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    card_view:cardBackgroundColor="#ffffff"
+                    card_view:cardCornerRadius="@dimen/cardview_default_radius"
+                    card_view:cardElevation="@dimen/cardview_default_elevation">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Won:"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tvWon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="2dp"
+                            android:text="Pending"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <FrameLayout
+                        android:id="@+id/center3"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_centerHorizontal="true" />
+
+                    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card_view_wallet"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_margin="@dimen/card_padding"
+                        android:layout_toLeftOf="@id/center3"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        card_view:cardBackgroundColor="@color/bosm_roulette"
+                        card_view:cardCornerRadius="@dimen/cardview_default_radius"
+                        card_view:cardElevation="@dimen/cardview_default_elevation">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/activity_vertical_margin"
+                            android:paddingTop="@dimen/activity_vertical_margin">
+
+                            <TextView
+                                android:id="@+id/wallet"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:text="Wallet"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                                android:textColor="@color/white" />
+
+                            <ImageView
+                                android:id="@+id/roulette_logo"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/bosm_roulette_large"
+                                android:tint="@color/white" />
+
+                            <TextView
+                                android:id="@+id/tvWallet"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:text="100"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                android:textColor="@color/white"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@id/tvWallet"
+                                android:layout_toLeftOf="@id/tvWallet"
+                                android:text="$"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                                android:textColor="@color/white"
+                                android:textSize="20sp" />
+
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card_view_bid"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_margin="@dimen/card_padding"
+                        android:layout_toRightOf="@id/center3"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        card_view:cardBackgroundColor="@color/bid"
+                        card_view:cardCornerRadius="@dimen/cardview_default_radius"
+                        card_view:cardElevation="@dimen/cardview_default_elevation">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingBottom="@dimen/activity_vertical_margin"
+                            android:paddingTop="@dimen/activity_vertical_margin">
+
+                            <TextView
+                                android:id="@+id/bet"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:text="Bet"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                                android:textColor="@color/white" />
+
+                            <ImageView
+                                android:id="@+id/ivBet"
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentBottom="true"
+                                android:layout_below="@id/bet"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/bid"
+                                android:tint="@color/white" />
+
+                            <TextView
+                                android:id="@+id/tvBidAmount"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_below="@id/bet"
+                                android:layout_toEndOf="@+id/ivBet"
+                                android:layout_toRightOf="@+id/ivBet"
+                                android:gravity="center"
+                                android:text="$35"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <FrameLayout
+                        android:id="@+id/center4"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_centerHorizontal="true" />
+
+                    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card_view_pow_bid"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_margin="@dimen/card_padding"
+                        android:layout_toLeftOf="@id/center4"
+                        android:layout_toStartOf="@id/center4"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        card_view:cardBackgroundColor="@color/power_bid_active"
+                        card_view:cardCornerRadius="@dimen/cardview_default_radius"
+                        card_view:cardElevation="@dimen/cardview_default_elevation">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingBottom="@dimen/activity_vertical_margin"
+                            android:paddingTop="@dimen/activity_vertical_margin">
+
+                            <TextView
+                                android:id="@+id/pow_bid"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:text="Power Bet"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                                android:textColor="@color/white" />
+
+                            <ImageView
+                                android:id="@+id/ivPowBet"
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentBottom="true"
+                                android:layout_below="@id/pow_bid"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/power_bid"
+                                android:tint="@color/white" />
+
+                            <TextView
+                                android:id="@+id/tvPowBidAmount"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_below="@id/pow_bid"
+                                android:layout_toEndOf="@+id/ivPowBet"
+                                android:layout_toRightOf="@+id/ivPowBet"
+                                android:gravity="center"
+                                android:text="$35"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/tvTimerPowBet"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/pow_bid"
+                                android:gravity="center"
+                                android:text="8:00:00"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                android:textColor="@color/white"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card_view_spin"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_margin="@dimen/card_padding"
+                        android:layout_toEndOf="@id/center4"
+                        android:layout_toRightOf="@id/center4"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        card_view:cardBackgroundColor="@color/slot"
+                        card_view:cardCornerRadius="@dimen/cardview_default_radius"
+                        card_view:cardElevation="@dimen/cardview_default_elevation">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingBottom="@dimen/activity_vertical_margin"
+                            android:paddingTop="@dimen/activity_vertical_margin">
+
+                            <TextView
+                                android:id="@+id/spin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:text="Spin n Earn"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                                android:textColor="@color/white" />
+
+                            <ImageView
+                                android:id="@+id/ivSpin"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentBottom="true"
+                                android:layout_below="@id/spin"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:padding="10dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/slot"
+                                android:tint="@color/white" />
+
+                            <TextView
+                                android:id="@+id/tvTimerSpin"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/spin"
+                                android:gravity="center"
+                                android:text="8:00:00"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                android:textColor="@color/white"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+    <!--android:id="@+id/fab"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="bottom|end"-->
+    <!--android:layout_margin="@dimen/fab_margin"-->
+    <!--android:src="@drawable/bid"-->
+    <!--android:tint="@color/white" />-->
+
+ <!--   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_anchor="@id/toolbar_layout"
+        app:layout_anchorGravity="bottom">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/toolbar_shadow" />
+
+    </LinearLayout>
+-->
+
+</FrameLayout>

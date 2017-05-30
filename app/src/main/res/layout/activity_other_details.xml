@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppTheme.WrapperStyle"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".auth.OtherDetailsActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_person_black_48dp"
+        android:tint="#F9A825" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/mobile_layout"
+        style="@style/AppTheme.Text.TextInputLayout"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/colorAccent"
+        app:errorTextAppearance="@style/AppTheme.Text.ErrorText"
+        app:hintTextAppearance="@style/AppTheme.Text.HintText">
+
+        <EditText
+            android:id="@+id/mobile"
+            style="@style/AppTheme.EditText"
+            android:hint="Mobile"
+            android:textColor="@color/colorAccent"
+            android:inputType="phone" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/code_layout"
+        style="@style/AppTheme.Text.TextInputLayout"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/colorAccent"
+        app:errorTextAppearance="@style/AppTheme.Text.ErrorText"
+        app:hintTextAppearance="@style/AppTheme.Text.HintText">
+
+        <EditText
+            android:id="@+id/code"
+            style="@style/AppTheme.EditText"
+            android:hint="Referral Code (Optional)"
+            android:inputType="textCapCharacters"
+            android:textColor="@color/colorAccent"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/bLogin"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="Register"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content" />
+        <!--style="@style/AppTheme.Button"-->
+
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="5dp"
+        android:background="@drawable/list_border"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Name"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/name"
+            android:textColor="#f363"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Desc"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/desc"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:text="Time"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/dateTime"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:text="Location"
+            android:layout_marginTop="85dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/location"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:text="Status"
+            android:layout_gravity="end"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/status"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="Team1"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/team1"
+            android:textColor="#f222"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="vs"
+            android:layout_marginTop="120dp"
+            android:layout_gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="Team2"
+            android:layout_marginTop="120dp"
+            android:layout_marginRight="35dp"
+           android:layout_gravity="end"
+            android:id="@+id/team2"
+            android:textColor="#f222"
+            />
+
+
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/slot"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp">
+
+    <LinearLayout
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/slot"
+            android:tint="@color/white"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:layout_marginLeft="0dp"
+            android:textSize="30sp"
+            android:text="Spin n Earn"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/left"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:padding="5dp"
+        android:layout_alignTop="@+id/mid"
+        android:layout_toLeftOf="@+id/mid"
+        android:layout_toStartOf="@+id/mid"
+        android:tint="#BF360C"
+        android:elevation="5dp"
+        android:background="@color/white"
+        android:src="@drawable/cricket"/>
+
+    <ImageView
+        android:id="@+id/mid"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:padding="5dp"
+        android:tint="#BF360C"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/label"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:elevation="5dp"
+        android:src="@drawable/basketball"/>
+
+    <ImageView
+        android:id="@+id/right"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:padding="5dp"
+        android:tint="#BF360C"
+        android:layout_alignTop="@+id/mid"
+        android:layout_toRightOf="@+id/mid"
+        android:layout_toEndOf="@+id/mid"
+        android:background="@color/white"
+        android:elevation="5dp"
+        android:src="@drawable/football"/>
+
+    <Button
+        android:id="@+id/bSpin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spin"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/mid"
+        android:textColor="@color/colorPrimary"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/tvWon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bSpin"
+        android:layout_alignStart="@+id/bSpin"
+        android:layout_alignRight="@+id/bSpin"
+        android:layout_alignEnd="@+id/bSpin"
+        android:layout_alignTop="@+id/bSpin"
+        android:layout_alignBottom="@+id/bSpin"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:text="WON"/>
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/football"
+            android:tint="#BF360C"
+            android:layout_marginTop="5dp"
+            android:id="@+id/image"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name of Event"
+            android:textSize="17dp"
+            android:textColor="@color/colorAccent"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/name"
+            android:layout_below="@+id/image"
+            />
+
+
+        <!-- IN NEW ACTIVITY-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:textSize="17dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="22dp"
+        android:id="@+id/location"
+        android:visibility="gone"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="15dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/date"
+        android:visibility="gone"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:textSize="15dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="36dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/time"
+        android:visibility="gone"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Description"
+        android:layout_marginLeft="15dp"
+        android:textSize="15dp"
+        android:id="@+id/desc"
+        android:visibility="gone"
+        />
+
+    </RelativeLayout>
+
+</RelativeLayout>

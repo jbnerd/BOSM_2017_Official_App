@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container">
+
+    <TextView
+        android:id="@+id/tvRank"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvName"
+        android:layout_alignBottom="@+id/tvEmail"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:text="1"/>
+
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvName"
+        android:layout_alignBottom="@+id/tvEmail"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_vertical|right"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:paddingRight="12dp"
+        android:textColor="@color/colorPrimary"
+        android:paddingEnd="12dp"
+        android:paddingLeft="12dp"
+        android:paddingStart="12dp"
+        android:text="68"/>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvRank"
+        android:layout_toEndOf="@+id/tvRank"
+        android:textColor="@color/colorPrimary"
+        android:layout_toLeftOf="@id/tvScore"
+        android:layout_toStartOf="@id/tvScore"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:paddingTop="8dp"
+        android:paddingLeft="4dp"
+        android:paddingStart="4dp"
+        android:paddingRight="4dp"
+        android:paddingEnd="4dp"
+        android:text="Name"/>
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/tvName"
+        android:layout_alignLeft="@+id/tvName"
+        android:layout_alignStart="@+id/tvName"
+        android:layout_toLeftOf="@id/tvScore"
+        android:layout_toStartOf="@id/tvScore"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:paddingBottom="8dp"
+        android:paddingLeft="4dp"
+        android:paddingStart="4dp"
+        android:paddingRight="4dp"
+        android:paddingEnd="4dp"
+        android:text="Email"/>
+</RelativeLayout>

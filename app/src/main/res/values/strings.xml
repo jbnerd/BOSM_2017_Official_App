@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">BOSM_OFFICIAL_APP</string>
+    <string name="title_activity_navigation">Navigation</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_roulette">Roulette</string>
+
+    <string name="instructions">
+        Bosm Roulette is an app based betting event using which one can predict the results of a match before its start.\n
+Each user is given a wallet balance of $100 in the beginning, using which one can bid on his favourite team.\n\n
+There are 2 types of bets:\n
+1. Normal Bet:\nIf a user bets $x on a particular match, if his prediction is correct, his wallet balance will increase by 2*x amount otherwise the balance will decrease by x/2 amount.\n
+2. Power Bet:\nIf a user bets $x on a particular match, if his prediction is correct, his wallet balance will increase by 4*x amount.....
+But if the user looses on that particular bid, his balance will reduce to 0, So be careful guys.
+The Power Bet will be active once every 4 hours so use this on the best team.\n\n
+Earning Additional Points\n
+1. Refer And Earn Policy:\n Users can refer the app using the Share button in the side drawer\n
+2. Spin and Earn:\n Try Your luck by spinning the wheel and earn additional bonus points.
+    </string>
+
+    <string name="para_1">Bosm Roulette is an app based betting event using which one can predict the results of a match before its start.</string>
+    <string name="para_2">Each user is given a wallet balance of $100 in the beginning, using which one can bid on his favourite team.</string>
+    <string name="h1">There are 2 types of bets : -</string>
+    <string name="h1_P1">Normal Bet :</string>
+    <string name="h1_P1_d">If a user bets $x on a particular match, if his prediction is correct, his wallet balance will increase by 2*x amount otherwise the balance will decrease by x/2 amount.</string>
+    <string name="h1_P2">Power Bet :</string>
+    <string name="h1_P2_d">If a user bets $x on a particular match, if his prediction is correct, his wallet balance will increase by 4*x amount.....\nBut if the user looses on that particular bid, his balance will reduce to 0, So be careful guys.\nThe Power Bet will be active once every 4 hours so use this on the best team.</string>
+    <string name="h2">Earning Additional Points : -</string>
+    <string name="h2_P1">Refer And Earn Policy :</string>
+    <string name="h2_P1_d">Users can refer the app using the Share button in the side drawer</string>
+    <string name="h2_P2">Spin and Earn :</string>
+    <string name="h2_P2_d">Try Your luck by spinning the wheel and earn additional bonus points.</string>
+
+    <string name="host_url">http://prashant8267851475.000webhostapp.com/bosm/</string>
+
+    <string name="error_mobile">Mobile is not valid</string>
+    <string name="error_code">Code is not valid</string>
+
+</resources>
